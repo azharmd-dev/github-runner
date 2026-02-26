@@ -41,7 +41,7 @@ resource "aws_security_group" "main" {
   tags = merge(
     local.common_tags,
     {
-        Name = "${var.project}-${var.environment}-github-actions"
+        Name = "${var.project}-${var.environment}-runner"
     }
   )
 }
